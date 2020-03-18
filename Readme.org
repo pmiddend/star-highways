@@ -1,0 +1,9 @@
+* Star Highways
+** Implementation notes
+
+- The exercises are all implemented in =UniverseTest=, so that’s a good starting point to look at the code.
+- I’m using the the [[https://jgrapht.org/][JGraphT]] library because it provides me with all the “usual” graph algorithms like shortest paths. Although I’m not using many of them, should the need arise in the future, we’ve got them at our disposal.
+- The available star systems are “fixed” as an enum, but the “universe” isn’t hard-coded. There’s a factory function for the universe from the task description, see =Universe.createUniverse=.
+- There is a function to enumerate paths in a graph in a “dumb” way (=Universe.allRoutes=). A production-quality implementation should be a little more optimized and work for bigger graphs (pruning earlier, for example). This is a tradeoff I made for this exercise.
+** The Graph
+[[./graph.png]]

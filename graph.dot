@@ -1,0 +1,16 @@
+digraph G {
+  A [ label="Solar System" ];
+  B [ label="Alpha Centauri" ];
+  C [ label="Sirius" ];
+  D [ label="Betelgeuse" ];
+  E [ label="Vega" ];
+  A -> B [ label="5h" ];
+  B -> C [ label="4h" ];
+  C -> D [ label="8h" ];
+  D -> C [ label="8h" ];
+  D -> E [ label="6h" ];
+  A -> D [ label="5h" ];
+  C -> E [ label="2h" ];
+  E -> B [ label="3h" ];
+  A -> E [ label="7h" ];
+}
